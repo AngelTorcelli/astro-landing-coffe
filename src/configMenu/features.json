@@ -1,0 +1,22 @@
+[
+    {
+        "name":"latte",
+        "price": 3.50,
+        "description": "A delicious blend of espresso and steamed milk.",
+        "image":"latte.jpg"
+    },
+    {
+        "name":"cappuccino",
+        "price": 3.50,
+        "description": "A delicious blend of espresso and steamed milk.",
+        "image" : "capuccino.jpg"
+    },
+    {
+        "name":"espresso",
+        "price": 3.50,
+        "description": "A delicious blend of espresso and steamed milk.",
+        "image" : "espresso.jpg"
+
+    }    
+
+]
