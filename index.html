@@ -20,13 +20,27 @@
     />
     <link
       rel="stylesheet"
-      href="/astro-landing-coffe/astro/index.c5c2f629.css"
+      href="/astro-landing-coffe/astro/index.706ecde7.css"
     />
+    <script type="module">
+      const e = document.querySelector("button.toggle-dark");
+      e &&
+        e.addEventListener("click", () => {
+          document.documentElement.classList.toggle("dark"),
+            console.log("cambiando a dark");
+        });
+    </script>
   </head>
-  <body>
+  <body class="dark:bg-zinc-900 dark:text-white">
     <main class="mx-auto container md:pt-10">
+      <button
+        type="button"
+        class="hover:bg-orange-500 toggle-dark bg-orange-300 dark:hover:bg-orange-300 dark:bg-orange-500 rounded-lg p-2 m-3"
+      >
+        <i class="fa-solid fa-moon"></i> Dark
+      </button>
       <header
-        class="bg-zinc-900 flex flex-col md:flex-row p-10 gap-3 rounded-xl"
+        class="dark:bg-zinc-900 bg-orange-50 flex flex-col md:flex-row p-10 gap-3 rounded-xl"
       >
         <div class="">
           <h1 class="text-5xl font-bold">Coffe Torcelli</h1>
@@ -40,7 +54,9 @@
 
         <img src="images/caffe.jpg" alt="" class="w-80" />
       </header>
-      <section class="bg-zinc-900 py-0 px-0 rounded-xl my-4 flex flex-col">
+      <section
+        class="bg-zinc-900 text-zinc-100 py-0 px-0 rounded-xl my-4 flex flex-col"
+      >
         <div
           class="relative bg-cover bg-center"
           style="background-image: url('images/caffe.jpg')"
@@ -62,7 +78,7 @@
       <h1 class="text-center font-bold text-5xl mt-10">Menu</h1>
       <div id="menuDiv" class="grid md:grid-cols-3 gap-3 p-4">
         <div
-          class="bg-amber-900 p-10 rounded-xl hover:bg-orange-700 transition duration-300"
+          class="dark:bg-amber-900 bg-orange-50 p-10 rounded-xl dark:hover:bg-orange-700 hover:bg-orange-100 transition duration-300"
         >
           <h2 class="text-2xl font-bold my-4">latte</h2>
           <h3>Q. 3.5</h3>
@@ -74,7 +90,7 @@
           </div>
         </div>
         <div
-          class="bg-amber-900 p-10 rounded-xl hover:bg-orange-700 transition duration-300"
+          class="dark:bg-amber-900 bg-orange-50 p-10 rounded-xl dark:hover:bg-orange-700 hover:bg-orange-100 transition duration-300"
         >
           <h2 class="text-2xl font-bold my-4">cappuccino</h2>
           <h3>Q. 3.5</h3>
@@ -90,7 +106,7 @@
           </div>
         </div>
         <div
-          class="bg-amber-900 p-10 rounded-xl hover:bg-orange-700 transition duration-300"
+          class="dark:bg-amber-900 bg-orange-50 p-10 rounded-xl dark:hover:bg-orange-700 hover:bg-orange-100 transition duration-300"
         >
           <h2 class="text-2xl font-bold my-4">espresso</h2>
           <h3>Q. 3.5</h3>
@@ -106,7 +122,7 @@
           </div>
         </div>
         <div
-          class="bg-amber-900 p-10 rounded-xl hover:bg-orange-700 transition duration-300"
+          class="dark:bg-amber-900 bg-orange-50 p-10 rounded-xl dark:hover:bg-orange-700 hover:bg-orange-100 transition duration-300"
         >
           <h2 class="text-2xl font-bold my-4">latte</h2>
           <h3>Q. 3.5</h3>
@@ -118,7 +134,7 @@
           </div>
         </div>
         <div
-          class="bg-amber-900 p-10 rounded-xl hover:bg-orange-700 transition duration-300"
+          class="dark:bg-amber-900 bg-orange-50 p-10 rounded-xl dark:hover:bg-orange-700 hover:bg-orange-100 transition duration-300"
         >
           <h2 class="text-2xl font-bold my-4">cappuccino</h2>
           <h3>Q. 3.5</h3>
@@ -134,7 +150,7 @@
           </div>
         </div>
         <div
-          class="bg-amber-900 p-10 rounded-xl hover:bg-orange-700 transition duration-300"
+          class="dark:bg-amber-900 bg-orange-50 p-10 rounded-xl dark:hover:bg-orange-700 hover:bg-orange-100 transition duration-300"
         >
           <h2 class="text-2xl font-bold my-4">espresso</h2>
           <h3>Q. 3.5</h3>
@@ -150,7 +166,9 @@
           </div>
         </div>
       </div>
-      <section class="bg-zinc-900 py-0 px-0 rounded-xl my-4 flex flex-col">
+      <section
+        class="bg-zinc-900 text-white py-0 px-0 rounded-xl my-4 flex flex-col"
+      >
         <div
           class="relative bg-cover bg-center"
           style="background-image: url('images/caffe.jpg')"
@@ -170,7 +188,7 @@
         </div>
       </section>
     </main>
-    <footer class="bg-zinc-900 py-10 gap-4">
+    <footer class="bg-zinc-100 dark:bg-zinc-900 dark:text-zinc-100 py-10 gap-4">
       <div
         class="container mx-auto flex flex-col md:flex-row justify-evenly text-center md:text-left gap-4"
       >
