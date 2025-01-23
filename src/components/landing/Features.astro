@@ -1,20 +1,19 @@
 ---
-import Features from '../../configMenu/features.json'
-
+import FeaturesData from '../../configMenu/features.json'
 ---
 
 <h1 class="text-center font-bold text-5xl mt-10">Menu</h1>
-<div class="grid md:grid-cols-3 gap-3 p-4 ">
+<div id="menuDiv" class="grid md:grid-cols-3 gap-3 p-4 ">
     {
-        Features.map((feature)=>(
-            <div class="bg-amber-900 p-10 rounded-xl hover:bg-orange-700 transition duration-300">
+        FeaturesData["menus"].map((feature)=>(
+            <div class="dark:bg-amber-900 bg-orange-50 p-10 rounded-xl dark:hover:bg-orange-700 hover:bg-orange-100 transition duration-300">
 
                 <h2 class="text-2xl font-bold my-4">{feature.name}</h2>
                 <h3>Q. {feature.price}</h3>
                 <p class="font-thin mb-3">{feature.description}</p>
                 <div>
                 
-                <img src={"images/"+feature.image} class="w-72 mx-auto">
+                <img src={"images/"+feature.image} class="w-72 mx-auto" alt="image menu" loading="lazy">
                 </div>
             </div>
 

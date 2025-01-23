@@ -1,14 +1,42 @@
-<header class="bg-zinc-900 flex flex-col md:flex-row p-10 gap-3 rounded-xl">
+---
+import Carrousel from './Carrousel.astro'
+---
+
+
+<header class="dark:bg-orange-900 bg-orange-50  flex flex-col md:flex-row p-10 gap-3 rounded-xl">
+
+    <script>
+            const btn = document.querySelector('button.toggle-dark');
+            const btnMenu = document.querySelector('button.toggle-menu');
+            //const btn = document.getElementById('toggle-dark');
+            if (btn){
+                btn.addEventListener('click', () => {
+                document.documentElement.classList.toggle('dark');
+                console.log("cambiando a dark");
+            })
+            }
+            
+            if(btnMenu){
+                btnMenu.addEventListener('click', () => {
+                    document.getElementById('menuDiv')?.scrollIntoView({behavior: "smooth"});
+
+                })
+            }
+            
+        
+    </script>
     <div class="">
-        <h1 class="text-5xl font-bold">Coffe Torcelli</h1>
+        <h1 class="text-6xl font-bold">Coffe <span class="dark:text-orange-300 text-orange-500">Torcelli</span></h1>
         <p class="my-2 text-2xl">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque consequuntur quas, tempora quo magni dolorum, corporis similique architecto enim animi vitae, nam ipsa odio rem saepe vero! Magni, possimus facere.
+            El mejor café de la región, disfruta de un buen café en un ambiente agradable. Mas de 10 años de experiencia nos respaldan en la elaboración de un buen café, ven y disfruta de un buen café.
         </p>
-       
-        <button class="bg-orange-900 py-2 px-4 active:bg-orange-700 hover:bg-orange-800 rounded-lg">
-            Menu
-        </button>
+        <button type="button" class="hover:bg-orange-500 toggle-menu bg-orange-300 dark:hover:bg-orange-300 dark:bg-orange-500 rounded-lg p-2 mb-3"><i class="fa-solid fa-caret-down"></i> Ir a menú</button>
+        <button type="button" class="hover:bg-orange-500 toggle-dark bg-orange-300 dark:hover:bg-orange-300 dark:bg-orange-500 rounded-lg p-2 mb-3"><i class="fa-solid fa-moon"></i> Modo oscuro</button>
+        
     </div>
 
-    <img src="images/caffe.jpg" alt="" class="w-80">
+    <img src="images/caffe.jpg" alt="cafe" class="w-80 rounded-xl">
 </header>
+
+<Carrousel/>
+

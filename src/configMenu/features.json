@@ -1,22 +1,79 @@
-[
-    {
-        "name":"latte",
-        "price": 3.50,
-        "description": "A delicious blend of espresso and steamed milk.",
-        "image":"latte.jpg"
-    },
-    {
-        "name":"cappuccino",
-        "price": 3.50,
-        "description": "A delicious blend of espresso and steamed milk.",
-        "image" : "capuccino.jpg"
-    },
-    {
-        "name":"espresso",
-        "price": 3.50,
-        "description": "A delicious blend of espresso and steamed milk.",
-        "image" : "espresso.jpg"
+{
 
-    }    
+    "menus": [
+        {
+            "name":"latte",
+            "price": 3.50,
+            "description": "A delicious blend of espresso and steamed milk.",
+            "image":"latte.jpg"
+        },
+        {
+            "name":"cappuccino",
+            "price": 3.50,
+            "description": "A delicious blend of espresso and steamed milk.",
+            "image" : "capuccino.jpg"
+        },
+        {
+            "name":"espresso",
+            "price": 3.50,
+            "description": "A delicious blend of espresso and steamed milk.",
+            "image" : "espresso.jpg"
+    
+        },
+        {
+            "name":"latte",
+            "price": 3.50,
+            "description": "A delicious blend of espresso and steamed milk.",
+            "image":"latte.jpg"
+        },
+        {
+            "name":"cappuccino",
+            "price": 3.50,
+            "description": "A delicious blend of espresso and steamed milk.",
+            "image" : "capuccino.jpg"
+        },
+        {
+            "name":"espresso",
+            "price": 3.50,
+            "description": "A delicious blend of espresso and steamed milk.",
+            "image" : "espresso.jpg"
+    
+        }        ,
+        {
+            "name":"latte",
+            "price": 3.50,
+            "description": "A delicious blend of espresso and steamed milk.",
+            "image":"latte.jpg"
+        },
+        {
+            "name":"cappuccino",
+            "price": 3.50,
+            "description": "A delicious blend of espresso and steamed milk.",
+            "image" : "capuccino.jpg"
+        },
+        {
+            "name":"espresso",
+            "price": 3.50,
+            "description": "A delicious blend of espresso and steamed milk.",
+            "image" : "espresso.jpg"
+    
+        }
+    ],
+    "combos": [
+        {
+            "name": "Combo 1",
+            "image": "combo1.jpg"
+        },
+        {
+            "name": "Combo 2",
+            "image": "combo2.jpg"
+        },
+        {
+            "name": "Combo 3",
+            "image": "combo3.jpg"
+        }
 
-]
+    ]
+    
+
+}
