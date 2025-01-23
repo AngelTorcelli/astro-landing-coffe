@@ -7,4 +7,6 @@ export default defineConfig({
   integrations: [tailwind()],
   site: 'https://AngelTorcelli.github.io',
   base: '/astro-landing-coffe',
+  outDir: './dist',
+  
 });
